@@ -140,7 +140,7 @@
               </li>
             </ul>
           </div>
-          <a href = 'room-detail/{{$room['id']}}'><button class="button button--book button--golden offers__button">BOOK NOW</button></a>
+          <a href = 'rooms/{{$room['id']}}'><button class="button button--book button--golden offers__button">BOOK NOW</button></a>
         </div>
       </div>
       @endforeach
@@ -161,7 +161,7 @@
             @foreach ($rooms as $index => $room)
             @if($index <3)
             <div class="swiper-slide swiper-slide--popular-rooms">
-              <a href = '/room-detail/{{$room['id']}}'>
+              <a href = '/rooms/{{$room['id']}}'>
               <div class="room-card--popular">
                 <div class="room-card__img room-card__img--full room-card__img--popular-rooms">
                   <img class="room-card__img--img" src={{$room['thumbnail']}} alt="room photo">

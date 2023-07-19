@@ -25,6 +25,15 @@
     background: #FFFFFF;
 }
 
+.nav--orders{
+    height: 80px;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+}
+
+.nav__logo--orders{
+    max-height: 50px;
+}
 .nav__list{
     display:none;
     list-style: none;

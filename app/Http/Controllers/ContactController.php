@@ -15,7 +15,7 @@ class ContactController extends Controller
     {   
         return view('contact');
     }
-    public function post(Request $request)
+    public function create(Request $request)
     {
         $lastContact = Contact::latest('id')->first();
         if($lastContact){

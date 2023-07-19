@@ -288,7 +288,7 @@ Room Details
           <div class="swiper-wrapper">
             @foreach($rooms as $index => $room)
             <div class="swiper-slide swiper-slide--handpicked-rooms">
-              <a href = '/room-detail/{{$room['id']}}'>
+              <a href = '/rooms/{{$room['id']}}'>
               <div class="room-card room-card--rooms">
                 <div class="room-card__img">
                   <img class="room-card__img--img" src={{$room['thumbnail']}} alt="room photo">

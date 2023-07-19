@@ -130,7 +130,7 @@
         @foreach($rooms as $index => $room)
         @if ($index > 1 && $index<5)
         <div class="swiper-slide swiper-slide--handpicked-rooms">
-          <a href = 'room-detail.php?id={{$room['id']}}'>
+          <a href = 'rooms/{{$room['id']}}'>
           <div class="room-card">
             <div class="room-card__img room-card__img--full">
               <img class="room-card__img--img" src={{$room['thumbnail']}} alt="room photo">
