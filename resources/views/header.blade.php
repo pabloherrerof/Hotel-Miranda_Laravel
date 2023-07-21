@@ -27,7 +27,7 @@
     </div>
 
     <div class="nav__funcionalities">
-      <a href="/login"
+      <a href=""
         ><img
           class="nav__funcionalities-icon"
           src="../assets/header/profile-icon.svg"
