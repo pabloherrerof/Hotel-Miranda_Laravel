@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\IndexController;
@@ -20,9 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/dashboard', [OrdersController::class, 'show'])->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -33,6 +32,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/rooms',[RoomsController::class, 'show']);
+Route::get('/about',[AboutController::class, 'show']);
 Route::get('/rooms/{id}',[RoomsController::class, 'showSingle']);
 Route::post('/rooms/{id}',[BookingController::class, 'create']);
 Route::get('/offers',[OffersController::class, 'show']);
