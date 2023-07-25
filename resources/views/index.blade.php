@@ -17,10 +17,10 @@
         </h1>
 
         <div class="intro__buttons">
-          <button class="button button--golden button--intro">
+         <a href="#video"> <button class="button button--golden button--intro">
             TAKE A TOUR
-          </button>
-          <button class="button button--dark button--intro">LEARN MORE</button>
+          </button></a>
+          <a href="/about"><button class="button button--dark button--intro">LEARN MORE</button></a>
         </div>
       </div>
     </div>
@@ -215,7 +215,7 @@
   </section>
 
   <!--SECCION VIDEO-->
-  <section class="intro-video">
+  <section class="intro-video" id="video">
     <div class="intro-video__container">
       <h5 class="text__pretitle text--gold intro-video__pretitle">
         INTRO VIDEO

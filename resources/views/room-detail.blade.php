@@ -54,7 +54,7 @@ Room Details
           <h5 class="room-detail__form-title text__form text--lightblack">
             Check Availability
           </h5>
-          <form method="POST" action="/room-detail/{{$room->id}}" class="room-detail__form">
+          <form method="POST" action="/rooms/{{$room->id}}" class="room-detail__form">
             @csrf
             <div class="room-detail__input-container">
               <label
